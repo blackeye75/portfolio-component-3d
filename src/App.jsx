@@ -1,14 +1,15 @@
 import { Canvas } from "@react-three/fiber";
-import "./style.css"
+import "./style.css";
 import { OrbitControls } from "@react-three/drei";
+import * as THREE from "three"
 function App() {
   return (
-    <Canvas >
-      <OrbitControls   />
-      <ambientLight/>
+    <Canvas>
+      <OrbitControls />
+      <ambientLight />
       <mesh>
-        <boxGeometry />
-        <cylinderGeometry />
+        <cylinderGeometry args={[1, 1, 1, 30, 30, true]} />
+        <meshStandardMaterial side={THREE.DoubleSide} />
       </mesh>
     </Canvas>
   );
