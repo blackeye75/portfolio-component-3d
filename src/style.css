@@ -8,6 +8,8 @@ body,
 #root{
     /* position:fixed ; */
     background-color:black;
+    background-image: url("./bg.jpg");
+    background-size: cover;
 }
 .text{
   -webkit-text-stroke: 2px black;
