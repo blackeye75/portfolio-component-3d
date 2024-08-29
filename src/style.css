@@ -6,6 +6,10 @@ body,
 
 }
 #root{
-    position:fixed ;
+    /* position:fixed ; */
     background-color:black;
+}
+.text{
+  -webkit-text-stroke: 2px black;
+  color: white;
 }
